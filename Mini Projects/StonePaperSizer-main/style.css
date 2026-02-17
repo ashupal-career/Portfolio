@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-align:center;
+  font-family:Segoe UI, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+h1{
+  background:#8338ec;
+  color:white;
+  height:5rem;
+  line-height:5rem;
+  font-size:clamp(1.5rem,4vw,2.5rem);
+}
+
+/* ---------- CHOICES ---------- */
+.choice-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding:2rem;
+}
+
+.choice{
+  height:170px;
+  width:170px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.3s;
+}
+
+.choice:hover{
+  transform:scale(1.08);
+  opacity:0.8;
+  cursor:pointer;
+}
+
+/* ---------- IMAGES ---------- */
+img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border:4px solid black;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.choice:hover img{
+  border-color:#8338ec;
+}
+
+/* ---------- SCORE BOARD ---------- */
+.score-board{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:4rem;
+  margin-top:2rem;
+  font-size:clamp(1.2rem,3vw,2rem);
+}
+
+#user-score,
+#computer-score{
+  font-size:clamp(2rem,6vw,4rem);
+  font-weight:bold;
+}
+
+/* ---------- MESSAGE ---------- */
+.msg-container{
+  margin-top:3rem;
+  padding:1rem;
+}
+
+#msg{
+  background:black;
+  color:white;
+  font-size:clamp(1.2rem,3vw,2rem);
+  padding:1rem 2rem;
+  border-radius:15px;
+  display:inline-block;
+}
+
+/* ---------- TABLET ---------- */
+@media(max-width:768px){
+
+  .choice{
+    height:140px;
+    width:140px;
+  }
+
+  .choice-container{
+    gap:1.5rem;
+  }
+
+  .score-board{
+    gap:2rem;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:480px){
+
+  h1{
+    height:4rem;
+    line-height:4rem;
+  }
+
+  .choice{
+    height:110px;
+    width:110px;
+  }
+
+  .choice-container{
+    gap:1rem;
+    margin-top:2rem;
+  }
+
+  #msg{
+    padding:.8rem 1.2rem;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media(max-width:320px){
+  .choice{
+    height:90px;
+    width:90px;
+  }
+
+  #msg{
+    font-size:1rem;
+  }
+}

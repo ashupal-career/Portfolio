@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bat Ball Stump Game</title>
+<link rel="stylesheet" href="Circket.css">
+<link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<div class="game-container">
+
+    <h1>🏏 Bat Ball Stump</h1>
+
+    <div class="scoreboard">
+        <div>👤 You: <span id="userScore">0</span></div>
+        <div>💻 Computer: <span id="compScore">0</span></div>
+    </div>
+
+    <div class="buttons">
+        <button class="choice" data-choice="Bat">🏏 Bat</button>
+        <button class="choice" data-choice="Ball">⚾ Ball</button>
+        <button class="choice" data-choice="Stump">🏏 Stump</button>
+    </div>
+
+    <div class="result-box">
+        <p id="resultText">Make your move!</p>
+        <p id="choices"></p>
+    </div>
+
+    <button id="resetBtn">Reset Game</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
